@@ -1,0 +1,43 @@
+#splashcreen {
+  background: linear-gradient(to bottom right, #6B1E7E, #D0077F);
+  height: 100vh;
+  width: auto;
+}
+#principal {
+  background-image: url("../assets/images/street.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  display: none;
+  height: 100vh;
+  width: auto;
+}
+#logo-pink {
+    padding-top: 10%;
+    display: block;/*Si no lo especifico, al centrar la imagen con margin no lo hace.*/
+    width: 25%;
+    margin: 0 auto;
+    top: 10%;
+}
+#logo-white {
+    height: auto;
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    top: 10%;
+}
+#log-in , #sign-up {
+  background-color: transparent;
+}
+
+#enterPhone {
+  display: none;
+
+}
+
+.m-t {
+  margin-top: 5%;
+}
+.navigate {
+  color: #880470;
+}
