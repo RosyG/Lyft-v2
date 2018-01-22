@@ -1,4 +1,4 @@
-#splashcreen {
+#splashcreen, #successRegister {
   background: linear-gradient(to bottom right, #6B1E7E, #D0077F);
   height: 100vh;
   width: auto;
@@ -19,20 +19,20 @@
     margin: 0 auto;
     top: 10%;
 }
-#logo-white {
+#logo-white, .img-check {
     height: auto;
     display: block;
     width: 40%;
     margin: 0 auto;
     top: 10%;
+    padding-top: 10%;
 }
 #log-in , #sign-up {
   background-color: transparent;
 }
-
+/*Sección en la que se introduce el número telefonico*/
 #enterPhone {
   display: none;
-
 }
 
 .m-t {
@@ -40,4 +40,32 @@
 }
 .navigate {
   color: #880470;
+}
+#PhoneNumber {
+  padding-top: 2%;
+}
+.nextEnterNumber, #nextEnterNameEmail, #nextToSuccess {
+  background-color: #EA0B8C;
+}
+/*Estilos de la sección de la verificación del número telefonico.*/
+#verifyPhoneNumber {
+  display: none;
+}
+
+/*Estilos de la sección donde el usuario introduce nombre y email.*/
+#enterNameEmail {
+  display: none;
+}
+
+
+/*Estilos de la sección donde se le muestra al usuario su registro de manera exitosa.*/
+#successRegister {
+  display: none;
+}
+.img-check {
+  margin: 0 auto;
+}
+/*Boton que tiene la función de regresar a las ventanas anteriores.*/
+#backPrincipal {
+  background-color: transparent;
 }

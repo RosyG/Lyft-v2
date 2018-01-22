@@ -13,7 +13,7 @@
     <title>Lyft App</title>
 </head>
 
-<body onload="splash(1000)">
+<body onload="splash(500)">
 
     <section id="splashcreen" class="valign-wrapper">
       <img id="logo-white" src="assets/images/logo-white.png" alt="logo-white">
@@ -31,65 +31,94 @@
 
     <section id="enterPhone">
       <div class="row center m-t">
-          <div class="col m1 s1 push-m3 push-s3"><i class="navigate medium material-icons rigth">navigate_before</i></div>
+          <div id="backPrincipal" class="col m1 s1 push-m3 push-s3"><i class="navigate medium material-icons rigth">navigate_before</i></div>
           <div class="col m3 s3 push-m4 push-s4"><h5>Sing Up</h5></div>
           <div class="col m12 s12">
             <p>Join now ofr free ride credit</p>
           </div>
-
-            <div class="input-field col s12">
-              <select>
-                <optgroup label="team 1">
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                </optgroup>
-                <optgroup label="team 2">
-                  <option value="3">Option 3</option>
-                  <option value="4">Option 4</option>
-                </optgroup>
-              </select>
-              <label>Optgroups</label>
-            </div>
-
       </div>
-      <div class="row">
-        <div class="input-field col s12 m6">
+
+      <div class="row center m-t">
+        <div class="input-field col s3 m3">
           <select class="icons">
-            <option value="" disabled selected>Choose your option</option>
-            <option value="" data-icon="images/sample-1.jpg" class="left circle">example 1</option>
-            <option value="" data-icon="images/office.jpg" class="left circle">example 2</option>
-            <option value="" data-icon="images/yuna.jpg" class="left circle">example 3</option>
+            <option value="" disabled selected>Tu país:</option>
+            <option value="" data-icon="assets\icons-collection\png\mexico.png" class="left circle">Mexico (55)</option>
+            <option value="" data-icon="assets\icons-collection\png\canada.png" class="left circle">Cánada (077)</option>
+            <option value="" data-icon="assets\icons-collection\png\venezuela.png" class="left circle">Venezuela (53)</option>
+            <option value="" data-icon="assets\icons-collection\png\estados-unidos.png" class="left circle">Estados Unidos (14)</option>
           </select>
-          <label>Images in select</label>
+          <label>Selecciona tu país</label>
         </div>
+        <input class="col s5 m5" id="phoneNumber" type="number" name="PhoneNumber" maxlength="10" placeholder="Your phone number" pattern="[0-9]{10}">
 
+        <div class="row center">
 
-        <div class="input-field">
-          <select disabled>
-            <option value="" disabled selected>Choose your option</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-          </select>
-          <label>Materialize Disabled</label>
+            <p class="col s5 m5 center">We´ll send a text to verify your phone</p>
+            <a class="nextEnterNumber col m8 s8 btn">NEXT</a>
+
         </div>
+    </div>
 
-        <label>Browser Disabled</label>
-        <select class="browser-default" disabled>
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-        </select>
+    </section>
 
-        
+    <section id="verifyPhoneNumber">
+      <div class="row center m-t">
+          <div id="backEnterPhone" class="col m1 s1 push-m3 push-s3"><i class="navigate medium material-icons rigth">navigate_before</i></div>
+          <div class="col m3 s3 push-m4 push-s4"><h5>Sing Up</h5></div>
+          <div class="col m12 s12">
+            <p>Join now ofr free ride credit</p>
+          </div>
+          <div class="input-code">
+            <i class="prefix">LAB:</i>
+            <input class="col s12 m12" type="text" name="" value="">
+          </div>
+          <div class="col s12 m12 center">
+
+            <p>Enter the code sent to +52</p>
+
+            <button type="button" name="button-resend" id="button-resend">Resend code</button>
+          </div>
+
+          <a id="nextEnterNameEmail" class="col m8 s8 btn m-t">NEXT</a>
       </div>
-
-      <h1><i class="material-icons left">person_outline navigate_before</i> hola</h1>
     </section>
 
 
+    <section id="enterNameEmail">
+      <div class="row center m-t">
+          <div class="col m1 s1 push-m3 push-s3"><i id="backVerify" class="navigate medium material-icons rigth">navigate_before</i></div>
+          <div class="col m3 s3 push-m4 push-s4"><h5>Sing Up</h5></div>
+          <div class="col m12 s12">
+            <p>Join now ofr free ride credit</p>
+          </div>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="icon_telephone" type="tel" class="validate">
+                  <label for="icon_telephone">Telephone</label>
+                </div>
+              </div>
+            </form>
+          </div>
 
+          <a id="nextToSuccess" class="col m8 s8 btn">NEXT</a>
+      </div>
+
+    </section>
+
+    <section id="successRegister">
+
+      <img id="logo-white" src="assets\images\logo-white.png" alt="logo-white">
+
+      <img id="back-inicio" class="img-check m-t" src="assets\images\check.png" alt="check">
+    </section>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin=" anonymous "></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
