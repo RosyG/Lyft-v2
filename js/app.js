@@ -24,9 +24,6 @@ $(document).ready(function() {
   $('select').material_select();
 });
 
-
-
-
 //Declaración de funciones.
 /*Función que regresa a la ventana anterior.*/
 function backPrincipal () {
@@ -112,7 +109,4 @@ function clearVar () {
   $("#enterCode").val("");/*Donde el us introduce el código*/
   $("#icon_prefix").val("");/*Nombre dek usuario.*/
   $("#icon_telephone").val("");/*Email del usuario.*/
-
-
-
 }

@@ -13,19 +13,19 @@
   width: auto;
 }
 #logo-pink {
-    padding-top: 10%;
-    display: block;/*Si no lo especifico, al centrar la imagen con margin no lo hace.*/
-    width: 25%;
-    margin: 0 auto;
-    top: 10%;
+  display: block;/*Si no lo especifico, al centrar la imagen con margin no lo hace.*/
+  margin: 0 auto;
+  padding-top: 10%;
+  top: 10%;
+  width: 25%;
 }
 #logo-white, .img-check {
-    height: auto;
-    display: block;
-    width: 40%;
-    margin: 0 auto;
-    top: 10%;
-    padding-top: 10%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 10%;
+  top: 10%;
+  width: 40%;
 }
 #log-in , #sign-up {
   background-color: transparent;
@@ -45,7 +45,7 @@
   padding-top: 2%;
 }
 #next {
-  margin-left: 20%;  
+  margin-left: 20%;
 }
 .nextEnterNumber , #nextEnterNameEmail, #nextToSuccess {
   background-color: #EA0B8C;
