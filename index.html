@@ -39,22 +39,22 @@
       </div>
 
       <div class="row center m-t">
-        <div class="input-field col s3 m3">
+        <div class="input-field col s4 m3">
           <select class="icons">
-            <option value="" disabled selected>Tu país:</option>
-            <option value="" data-icon="assets\icons-collection\png\mexico.png" class="left circle">Mexico (55)</option>
-            <option value="" data-icon="assets\icons-collection\png\canada.png" class="left circle">Cánada (077)</option>
-            <option value="" data-icon="assets\icons-collection\png\venezuela.png" class="left circle">Venezuela (53)</option>
-            <option value="" data-icon="assets\icons-collection\png\estados-unidos.png" class="left circle">Estados Unidos (14)</option>
+            <option disabled selected>Tu país:</option>
+            <option data-icon="assets\icons-collection\png\mexico.png" class="left circle">Mexico (55)</option>
+            <option data-icon="assets\icons-collection\png\canada.png" class="left circle">Cánada (077)</option>
+            <option data-icon="assets\icons-collection\png\venezuela.png" class="left circle">Venezuela (53)</option>
+            <option data-icon="assets\icons-collection\png\estados-unidos.png" class="left circle">Estados Unidos (14)</option>
           </select>
-          <label>Selecciona tu país</label>
+          <label>Selecciona tu país.</label>
         </div>
         <input class="col s5 m5" id="phoneNumber" type="number" name="PhoneNumber" maxlength="10" placeholder="Your phone number" pattern="[0-9]{10}">
 
         <div class="row center">
 
-            <p class="col s5 m5 center">We´ll send a text to verify your phone</p>
-            <a class="nextEnterNumber col m8 s8 btn">NEXT</a>
+            <p class="col s12 m5 center">We´ll send a text to verify your phone</p>
+            <a id="next" class="nextEnterNumber col m8 s8 btn" disabled>NEXT</a>
 
         </div>
     </div>
@@ -64,13 +64,13 @@
     <section id="verifyPhoneNumber">
       <div class="row center m-t">
           <div id="backEnterPhone" class="col m1 s1 push-m3 push-s3"><i class="navigate medium material-icons rigth">navigate_before</i></div>
-          <div class="col m3 s3 push-m4 push-s4"><h5>Sing Up</h5></div>
-          <div class="col m12 s12">
+          <div class="col s3 m3 push-m4 push-s4"><h5>Sing Up</h5></div>
+          <div class="col s12 m12">
             <p>Join now ofr free ride credit</p>
           </div>
-          <div class="input-code">
-            <i class="prefix">LAB:</i>
-            <input class="col s12 m12" type="text" name="" value="">
+          <div class="col s12 m12 input-code btn">
+            <span class="col s3 m3">LAB:</span>
+            <input id="enterCode" class="col s8 m8" type="number" maxlength="3" placeholder="Your code here!" pattern="[0-9]{10}">
           </div>
           <div class="col s12 m12 center">
 
@@ -79,7 +79,7 @@
             <button type="button" name="button-resend" id="button-resend">Resend code</button>
           </div>
 
-          <a id="nextEnterNameEmail" class="col m8 s8 btn m-t">NEXT</a>
+          <a id="nextEnterNameEmail" class="col m8 s8 btn m-t" disabled>NEXT</a>
       </div>
     </section>
 
@@ -95,14 +95,14 @@
             <form class="col s12">
               <div class="row">
                 <div class="input-field col s6">
-                  <i class="material-icons prefix">account_circle</i>
+                  <i class="material-icons prefix">person_outline</i>
                   <input id="icon_prefix" type="text" class="validate">
                   <label for="icon_prefix">First Name</label>
                 </div>
                 <div class="input-field col s6">
-                  <i class="material-icons prefix">phone</i>
+                  <i class="material-icons prefix">mail_outline</i>
                   <input id="icon_telephone" type="tel" class="validate">
-                  <label for="icon_telephone">Telephone</label>
+                  <label for="icon_telephone">Email</label>
                 </div>
               </div>
             </form>

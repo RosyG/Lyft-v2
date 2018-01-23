@@ -44,12 +44,22 @@
 #PhoneNumber {
   padding-top: 2%;
 }
-.nextEnterNumber, #nextEnterNameEmail, #nextToSuccess {
+#next {
+  margin-left: 20%;  
+}
+.nextEnterNumber , #nextEnterNameEmail, #nextToSuccess {
   background-color: #EA0B8C;
+  margin-left: 20%;
+}
+.input-field {
+  margin-left: 15%;
 }
 /*Estilos de la sección de la verificación del número telefonico.*/
 #verifyPhoneNumber {
   display: none;
+}
+.input-code {
+  background-color: transparent;
 }
 
 /*Estilos de la sección donde el usuario introduce nombre y email.*/
