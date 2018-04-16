@@ -7,10 +7,10 @@ Desarrollo de una web-app que replique el sitio de **lyft**, se deben cumplir lo
 ![Lyft estructure](assets/images/lyft-structure.png)
 
 ## En este proyecto se aplican los siguientes conceptos:
-- Grid.
-- Uso de frameworks en CSS.
-- Enlace de videos.
-- Uso de jQuery.
+  - Uso de frameworks en CSS.
+  - Desarrollo de funciones.
+  - Enlace de videos.
+  - Uso de jQuery.
 
 ## Desarrollado para [Laboratoria](http://www.laboratoria.la/)
 
@@ -18,7 +18,7 @@ Desarrollo de una web-app que replique el sitio de **lyft**, se deben cumplir lo
 
 1. Realizar un [**Repositorio en GitHub**](https://github.com/RosyG/lyft-v3)
 
-2. Subir la estructura de carpetas con el comando `git add .`, `git commit -m "comentario"` y `git push origin master`
+2. Subir la estructura de carpetas con el comando `git add .`, `git commit -m "comentario"` y `git push origin nombre-rama`
 
 ## Flujo de la aplicación:
   - Vista splash con duración de 5 segundos que redirecciona a la vista de inicio. La vista de inicio cuenta con dos botones, en esta ocasión se seguirá el flujo de `SING UP`.

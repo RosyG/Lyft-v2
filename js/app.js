@@ -2,7 +2,7 @@
 function splash(time) {
 /*Función de splashscreen que recibe al tiempo en ms*/
 setTimeout(function () {
-  $('#splashcreen').hide(500);
+  $('#splashcreen').hide(400);
   $('#principal').show("slow");
 }, time);
 }
@@ -11,7 +11,7 @@ setTimeout(function () {
 $("#sign-up").click(enterPhone);
 $(".nextEnterNumber").click(generatingCode);
 $("#nextEnterNameEmail").click(enterNameEmail);
-$("#nextToSuccess").click(successRegister);
+// $("#nextToSuccess").click(successRegister);
 $("#button-resend").click(generatingCode);
 $("#backPrincipal").click(backPrincipal);
 $("#backEnterPhone").click(backenterPhone);
@@ -43,8 +43,8 @@ function generatingCode () {
   //generando código de manera aleatoria.
   var $random = Math.random()*1000;
   var $code = Math.floor($random);/*El número generado por random() es un decimal, por eso en necesario redondear hacia abajo. */
-  console.log($random);
-  console.log($code);
+  // console.log($random);
+  // console.log($code);
 
   /*Y direcciona a la página principal.*/
   $('#enterPhone').hide("slow");
@@ -61,10 +61,13 @@ function generatingCode () {
 function enterNameEmail () {
   $('#verifyPhoneNumber').hide("slow");
   $('#enterNameEmail').show("slow");
+  // $("#nextToSuccess").attr("disabled", true);/*Botón deshabilitado*/
+
 }
 
 /*Función que muestra la página donde se le indica al usuario su registro de manera exitosa.*/
-function successRegister () {
+function successRegister (e) {
+  e.preventDefault();
   $('#enterNameEmail').hide("slow");
   $('#successRegister').show("slow");
 }
@@ -109,4 +112,22 @@ function clearVar () {
   $("#enterCode").val("");/*Donde el us introduce el código*/
   $("#icon_prefix").val("");/*Nombre dek usuario.*/
   $("#icon_telephone").val("");/*Email del usuario.*/
+}
+/*Función que valida sus datos.*/
+function validateDate () {
+  $name = $("#icon_prefix").val();
+  console.log($name);
+  $email = $("#icon_email").val();
+  console.log($email);
+  console.log($name || $email);
+  console.log($name && $email);
+  if ($name && $email) {
+    console.log('habilitado');
+    $("#nextToSuccess").attr("disabled", false);/*Botón habilitado*/
+
+  }else {
+    console.log("deshabilitado");
+    $("#nextToSuccess").attr("disabled", true);/*Botón deshabilitado*/
+
+  }
 }

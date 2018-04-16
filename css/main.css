@@ -2,6 +2,7 @@
   background: linear-gradient(to bottom right, #6B1E7E, #D0077F);
   height: 100vh;
   width: auto;
+
 }
 #principal {
   background-image: url("../assets/images/street.jpg");
@@ -54,6 +55,10 @@
 .input-field {
   margin-left: 15%;
 }
+#toSuccess {
+  background-color: #EA0B8C;
+  border: none;
+}
 /*Estilos de la sección de la verificación del número telefonico.*/
 #verifyPhoneNumber {
   display: none;
@@ -79,4 +84,18 @@
 /*Boton que tiene la función de regresar a las ventanas anteriores.*/
 #backPrincipal {
   background-color: transparent;
+}
+#back-inicio {
+  padding-top: 0%;
+}
+.btn:hover, .btn-large:hover, input-field:hover {
+    background-color: #621786;
+}
+input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #621786;
+  -webkit-box-shadow: 0 1px 0 0 #621786;
+  box-shadow: 0 1px 0 0 #621786;
+}
+#next:hover, #nextEnterNameEmail:hover, #nextToSuccess:hover, {
+  background-color: #621786;
 }
