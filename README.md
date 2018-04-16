@@ -4,7 +4,7 @@
 Desarrollo de una web-app que replique el sitio de **lyft**, se deben cumplir los pasos necesarios para que un usuario pueda registrarse.
 
 ## Estructura de la página en móvil.
-![Lyft estructure](https://github.com/RosyG/Lyft-v2/blob/master/assets/images/lyft-structure.png)
+![Lyft estructure](https://raw.githubusercontent.com/RosyG/Lyft-v2/master/assets/images/lyft-structure.png)
 
 ## En este proyecto se aplican los siguientes conceptos:
   - Uso de frameworks en CSS.
