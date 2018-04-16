@@ -48,14 +48,14 @@
 #next {
   margin-left: 20%;
 }
-.nextEnterNumber , #nextEnterNameEmail {
+.nextEnterNumber , #nextEnterNameEmail, #nextToSuccess {
   background-color: #EA0B8C;
   margin-left: 20%;
 }
 .input-field {
   margin-left: 15%;
 }
-#nextToSuccess {
+#toSuccess {
   background-color: #EA0B8C;
   border: none;
 }
@@ -95,4 +95,7 @@ input[type=text]:not(.browser-default):focus:not([readonly]), input[type=passwor
   border-bottom: 1px solid #621786;
   -webkit-box-shadow: 0 1px 0 0 #621786;
   box-shadow: 0 1px 0 0 #621786;
+}
+#next:hover, #nextEnterNameEmail:hover, #nextToSuccess:hover, {
+  background-color: #621786;
 }
